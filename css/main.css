@@ -1,6 +1,10 @@
 @charset "UTF-8";
-* {
+body {
 	background-color: lightgrey;
+}
+
+#img-wrapper {
+	background-size: 100% 100%;
 }
 
 
