@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+	<link rel="stylesheet" href="css/main.css">
+	<div id="nav-placeholder"></div>
+</head>
+
+<body>
+	
+	<div id="adobe-dc-view"></div>
+	<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("adobe_dc_view_sdk.ready", function(){
+			var adobeDCView = new AdobeDC.View({clientId:"644e28c734c840f9bf04dca0fd24cfa8",divId:"adobe-dc-view"});
+			adobeDCView.previewFile(
+			{
+				content: {location: {url: "assets/files/Resume.pdf"}},
+				metaData: {fileName: "Resume.pdf"}
+			});
+		});
+	</script>
+	
+</body>
+</html>
