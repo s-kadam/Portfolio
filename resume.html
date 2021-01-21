@@ -21,13 +21,25 @@
 	<script src="js/bootstrap-4.4.1.js"></script>
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
+		const previewConfig = {
+			showPageControls: true,
+			dockPageControls: false,
+			showAnnotationTools: false,
+			showLeftHandPanel: false,
+			defaultViewMode: "FIT_PAGE",
+			enableFormFilling: false,			
+			showDownloadPDF: true,
+			showPrintPDF: true
+		}
+		
 		document.addEventListener("adobe_dc_view_sdk.ready", function(){
 			var adobeDCView = new AdobeDC.View({clientId:"644e28c734c840f9bf04dca0fd24cfa8",divId:"adobe-dc-view"});
 			adobeDCView.previewFile(
 			{
 				content: {location: {url: "assets/files/Resume.pdf"}},
-				metaData: {fileName: "Resume.pdf"}
-			});
+				metaData: {fileName: "Resume.pdf"},
+				showPageControls: false,
+			}, previewConfig);
 		});
 	</script>
 	
