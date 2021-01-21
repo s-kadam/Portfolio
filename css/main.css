@@ -1,11 +1,23 @@
 @charset "UTF-8";
 body {
-	background-color: lightgrey;
+	background-color: darkslategray;
+}
+
+p {
+	color: white;
+	margin: 20px;
+	text-align: center;
 }
 
 #home-page-img {
 	width: 100%;
 }
 
+#spotifyIFrame {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	border-top: 2px white;		
+}
 
 
