@@ -7,6 +7,19 @@ p {
 	color: white;
 	margin: 20px;
 	text-align: center;
+	width: 55%;
+}
+
+a:hover {
+	background-color: green;
+}
+
+.paragraph {
+	margin: 0 auto;
+}
+
+.paragraph-container {
+	
 }
 
 #home-page-img {
@@ -15,7 +28,7 @@ p {
 
 #spotifyIFrame {
 	margin: auto;
-	width: 50%;
+	width: 500px;
 	padding: 10px;
 	border-top: 2px white;		
 }
